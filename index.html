@@ -1,11 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Andre</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <p>T.B.D.</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andre A. Cire</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h1 class="site-title">Andre Augusto Cire</h1>
+      <p style="font-size: 16px; color: #555; margin-top: -5px;">
+        andre.cire@rotman.utoronto.ca • University of Toronto
+      </p>
+    </header>
+
+    <nav class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="students.html">Students</a>
+      <a href="CV_CireAndre.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    </nav>
+
+    <div class="layout">
+
+      <main class="content">
+
+        <h2>About me</h2>
+        <p>
+        I am an Associate Professor and Associate Chair, Research at the <a href=https://www.utsc.utoronto.ca/mgmt/>Department of Management</a>, University of Toronto Scarborough, and an Associate Professor at the <a href="https://www.rotman.utoronto.ca/">Rotman School of Management</a>, University of Toronto. I received my Ph.D. in Operations Research from the <a href="https://www.cmu.edu/tepper">Tepper School of Business</a> at Carnegie Mellon University.
+        </p>
+
+        <p>
+        At its core, <a href="research.html">my research</a> studies the fundamental tradeoff between computational tractability and optimal performance in complex decision systems under coupling and combinatorial constraints. Exploring this tension informs modeling, theoretical insights, and approximation frameworks that deepen our understanding of these systems while yielding scalable policies for real-world decision-making. My work applies to domains such as supply chains, healthcare operations, and revenue management. Methodologically, it integrates mathematical programming, Markov decision processes, reinforcement learning, and structured network representations.
+        </p>
+
+        <p>
+        I am fortunate to have my work recognized by awards such as the 2024 INFORMS Harvey J. Greenberg Research Award, an honorable mention for the 2023 INFORMS Computing Society Prize, and the Gerald L. Thompson Doctoral Dissertation Award in Management Science. I am also currently serving as an Associate Editor for the <a href="https://pubsonline.informs.org/journal/IJOC">INFORMS Journal on Computing</a>, as a Vice-Chair for the <a href="https://connect.informs.org/computing/home">INFORMS Computing Society</a>, and as Cluster Chair (Network area) for the <a href="https://connect.informs.org/optimizationsociety/home">INFORMS Optimization Society</a>, as well as a senior program member in multiple OR and AI conferences, such as NeurIPS and AAAI.
+        </p>
+
+
+        <p><b>Collaborations.</b> One of the most important and rewarding aspects of our work is the community. I genuinely enjoy connecting with fellow researchers, students, and industry practitioners. If you would like to chat about shared research interests or potential collaborations, please do not hesitate to drop me 
+          <a href="mailto:andre.cire@rotman.utoronto.ca">an email</a> or reach out at <a href="https://www.linkedin.com/in/andre-augusto-cire-b32510226/" target="_blank" rel="noopener noreferrer">LinkedIn</a>. If you are a student, please check  <a href="students.html">this page</a>.</p>
+
+      </main>
+
+      <aside class="sidebar">
+        <img src="assets/profile.jpg" alt="Profile Photo" class="profile" />
+
+        <div class="contact">
+          <div><a href="mailto:andre.cire@rotman.utoronto.ca">andre.cire@rotman.utoronto.ca</a></div>
+          <div><a href="https://scholar.google.com/citations?user=q85mN-MAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">[Google Scholar]</a></div>
+          <div><a href="https://www.linkedin.com/in/andre-augusto-cire-b32510226/" target="_blank" rel="noopener noreferrer">[LinkedIn]</a></div>
+          <div><a href="https://discover.research.utoronto.ca/16076-andre-augusto-cire" target="_blank" rel="noopener noreferrer">[Discover Research Page at UofT]</a></div>
+        </div>
+      </aside>
+
+    </div>
+
+    <footer class="footer">
+      © <span id="year"></span> Andre A. Cire
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
 </html>

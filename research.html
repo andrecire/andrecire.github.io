@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andre A. Cire - Research</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    /* A little extra styling just for the search bar */
+    .search-box {
+      width: 100%;
+      padding: 12px 16px;
+      margin-bottom: 24px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-family: inherit;
+    }
+    .search-box:focus {
+      outline: none;
+      border-color: #a00000;
+      box-shadow: 0 0 5px rgba(160, 0, 0, 0.2);
+    }
+    .pub-item {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .pub-title {
+      font-weight: 600;
+      font-size: 17px;
+    }
+    .pub-authors {
+      color: #444;
+    }
+    .pub-venue {
+      font-style: italic;
+      color: #666;
+    }
+    .pub-category {
+        font-size: 24px;        /* Increases the text size */
+        margin-top: 32px;       /* Adds a nice breathing room above the section */
+        margin-bottom: 16px;    /* Keeps a little space before the papers start */
+        border-bottom: 1px solid #ddd; /* Optional: adds a clean line under the title */
+        padding-bottom: 8px;    /* Optional: spaces the text from the line */
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h1 class="site-title">Andre Augusto Cire</h1>
+      <p style="font-size: 16px; color: #555; margin-top: -5px;">
+        andre.cire@rotman.utoronto.ca • University of Toronto
+      </p>
+    </header>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="students.html">Students</a>
+      <a href="CV_CireAndre.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    </nav>
+
+    <div>
+
+        <main class="content">
+
+            <h2>Research Areas</h2>
+        
+            My research spans combinatorial optimization, optimization under uncertainty, and sequential decision making. Recently, my work has been motivated by the challenges in three broad areas:
+
+            <ul class="research-list">
+                <li>
+                    <b><i>Coupled Dynamic Systems.</i></b> In many settings, multiple interconnected components evolve 
+                    stochastically over time and compete for shared resources, such as managing inventory across a supply network,
+                    allocating capacity across hospital units, or coordinating 
+                    service levels across locations. Because decisions in one part of the system 
+                    affect outcomes elsewhere, there is an inherent tradeoff between system complexity to enforce coordination, 
+                    and the need for tractable models that can be solved efficiently. My research investigates structural properties for coupled systems, exact methods, and approximation techniques that retain strong theoretical guarantees on performance. 
+                </li>
+
+                <li>
+                    <b><i>Leveraging Structure-aware Data in Combinatorial Optimization.</i></b> I have been one of the pioneers in designing network and decision-diagram formulations for optimization and stochastic optimization problems. The fundamental idea is to leverage structure in instance-specific settings to transform complex combinatorial constraints into tractable representations, while preserving tractability or strong bounds on solution quality. This approach has led to significant advances in both theory and practice, providing scalable solutions for previously intractable domains.
+                </li>
+
+                <li>
+                    <b><i>Applications in Supply Chains and Healthcare.</i></b> I apply these methodological advances to operational systems where resource
+                    coupling and uncertainty are central, informing capacity planning, allocation, scheduling, and system design decisions.
+                </li>
+            </ul>
+
+            <hr style="border: 0; border-top: 1px solid #ddd; margin: 40px 0;">
+
+            <h2>Publications</h2>
+            
+            <input type="text" id="searchInput" class="search-box" placeholder="Search by title, author, year, or keyword...">
+
+            <div id="publicationList">
+          
+                <div class="pub-section">
+                    <h3 class="pub-category">Working Papers</h3>
+                    
+                    <div class="pub-item">
+                    <div class="pub-title">Delayed Allocation in Marginalized Flow Models for Weakly Coupled Markov Decision Processes</div>
+                    <div class="pub-authors">S. Nadarajah, A. A. Cire</div>
+                    <div class="pub-venue">Working Paper</div>
+                    <a href="https://ssrn.com/abstract=6127326" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Network Relaxations for Combinatorial Bilevel Optimization under Linear Interactions</div>
+                    <div class="pub-authors">L. Lozano, D. Bergman, A. A. Cire</div>
+                    <div class="pub-venue">Working Paper</div>
+                    <a href="https://arxiv.org/abs/2407.18193" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Assortment Optimization without Prediction: An End-to-end Framework with Transaction Data</div>
+                    <div class="pub-authors">N. Chen, A. A. Cire, P. Gao, S. Wang</div>
+                    <div class="pub-venue">Working Paper</div>
+                    <a href="https://ssrn.com/abstract=5280529" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Dialysis Clinic Patient Flow and Work Design</div>
+                    <div class="pub-authors">V. Slaugh, A. A. Cire</div>
+                    <div class="pub-venue">Working Paper</div>
+                    <a href="https://ssrn.com/abstract=5399558" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Managing Scarce MRI Capacity in Overloaded Queueing Systems</div>
+                    <div class="pub-authors">Z. Xu, A. Diamant, A. A. Cire, E. Furman, O. Baron</div>
+                    <div class="pub-venue">Working Paper</div>
+                    <a href="https://ssrn.com/abstract=6158086" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Constrained Shortest-Path Reformulations via Decision Diagrams for Structured Two-stage Optimization Problems</div>
+                    <div class="pub-authors">L. Lozano, D. Bergman, A. A. Cire</div>
+                    <div class="pub-venue">Working Paper</div>
+                    <a href="https://arxiv.org/abs/2206.12962" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Loss Ratio as a Risk Constraint: Analysis and Optimization</div>
+                    <div class="pub-authors">O. Baron, O. Berman, A. A. Cire, V. Roshanaei</div>
+                    <div class="pub-venue">Working Paper</div>
+                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4425015" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+                </div>
+
+                <div class="pub-section">
+                    <h3 class="pub-category">Journal Papers</h3>
+                    
+                    <div class="pub-item">
+                    <div class="pub-title">The Sensitivity of the US Presidential Election to Coordinated Voter Relocation</div>
+                    <div class="pub-authors">C. Cardonha, D. Bergman, A. A. Cire, L. Lozano, and T. Yunes</div>
+                    <div class="pub-venue">INFORMS Journal on Computing, forthcoming 2026</div>
+                    <a href="https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2024.0990" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Design and Analysis of Efficient Sequencing Policies for Linear Cold Storage Devices</div>
+                    <div class="pub-authors">C. Cardonha, A. A. Cire, L.C. Villa Real</div>
+                    <div class="pub-venue">Production and Operations Management, 2025</div>
+                    <a href="https://doi.org/10.1177/10591478251313785" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Memory-efficient Sequential Pattern Mining with Hybrid Tries</div>
+                    <div class="pub-authors">A. Hosseininasab, W.-J. van Hoeve, A.A. Cire</div>
+                    <div class="pub-venue">Journal of Machine Learning Research, 2025</div>
+                    <a href="https://jmlr.org/papers/v25/22-0125.html" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Self-Adapting Network Relaxations for Weakly Coupled Markov Decision Processes</div>
+                    <div class="pub-authors">S. Nadarajah, A. A. Cire</div>
+                    <div class="pub-venue">Management Science, 2024</div>
+                    <a href="https://doi.org/10.1287/mnsc.2022.01108" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Decentralized Online Order Fulfillment in Omni-Channel Retailers</div>
+                    <div class="pub-authors">O. Baron, A. A. Cire, S. Savaser</div>
+                    <div class="pub-venue">Production and Operations Management, 2023</div>
+                    <a href="https://doi.org/10.1177/10591478241255066" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Multistage Fractionated Intensity Modulated Radiation Therapy Planning</div>
+                    <div class="pub-authors">M. Bodur, M. Cevik, A. A. Cire, Y. Lee, M. Ruschin</div>
+                    <div class="pub-venue">Computers & Operations Research, 2023</div>
+                    <a href="https://doi.org/10.1016/j.cor.2023.106371" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Model-free Assortment Pricing with Transaction Data</div>
+                    <div class="pub-authors">N. Chen, A. A. Cire, M. Hu, S. Lagzi</div>
+                    <div class="pub-venue">Management Science, 2023</div>
+                    <a href="https://doi.org/10.1287/mnsc.2022.4651" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Decision Diagrams for Discrete Optimization: A Survey of Recent Advances</div>
+                    <div class="pub-authors">M. Castro, A. A. Cire, J. C. Beck</div>
+                    <div class="pub-venue">INFORMS Journal on Computing, 2022</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/ijoc.2022.1170" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">A Combinatorial Cut-and-Lift Procedure with an Application to 0-1 Second-Order Conic Programming</div>
+                    <div class="pub-authors">M. Castro, A. A. Cire, J. C. Beck</div>
+                    <div class="pub-venue">Mathematical Programming, 2022</div>
+                    <a href="https://doi.org/10.1007/s10107-021-01699-y" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Dynamic Scheduling of Home Care Patients to Medical Providers</div>
+                    <div class="pub-authors">A. A. Cire, A. Diamant</div>
+                    <div class="pub-venue">Production and Operations Management, 2022</div>
+                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13801" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Network Models for Multiobjective Discrete Optimization</div>
+                    <div class="pub-authors">D. Bergman, M. Bodur, C. Cardonha, A. A. Cire</div>
+                    <div class="pub-venue">INFORMS Journal on Computing, 2022</div>
+                    <a href="https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2021.1066?journalCode=ijoc" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Network-Based Approximate Linear Programming for Discrete Optimization</div>
+                    <div class="pub-authors">S. Nadarajah, A. A. Cire</div>
+                    <div class="pub-venue">Operations Research, 2020</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/opre.2019.1953" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">BDD-Based Optimization for the Quadratic Stable Set Problem</div>
+                    <div class="pub-authors">J. Gonzales, A. A. Cire, A. Lodi, L.-M. Rousseau</div>
+                    <div class="pub-venue">Discrete Optimization, 2020</div>
+                    <a href="https://doi.org/10.1016/j.disopt.2020.100610" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">An MDD-based Lagrangian Approach to the Multi-Commodity Pickup-and-Delivery TSP</div>
+                    <div class="pub-authors">M. Castro, A. A. Cire, J. C. Beck</div>
+                    <div class="pub-venue">INFORMS Journal on Computing, 2020</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/ijoc.2018.0881" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Solving Delete Free Planning with Relaxed Decision Diagram Based Heuristics</div>
+                    <div class="pub-authors">M. Castro, C. Piacentini, A. A. Cire, J. C. Beck</div>
+                    <div class="pub-venue">Journal of Artificial Intelligence Research, 2020</div>
+                    <a href="https://www.jair.org/index.php/jair/article/view/11659" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Integrated Integer Programming and Decision Diagram Search Tree with an Application to the Maximum Independent Set Problem</div>
+                    <div class="pub-authors">J. Gonzales, A. A. Cire, A. Lodi, L.-M. Rousseau</div>
+                    <div class="pub-venue">Constraints, 2020</div>
+                    <a href="https://link.springer.com/article/10.1007/s10601-019-09306-w" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">A Network-Based Formulation for Scheduling Clinical Rotations</div>
+                    <div class="pub-authors">A. A. Cire, A. Diamant, T. H. Yunes, Alejandro Carrasco</div>
+                    <div class="pub-venue">Production and Operations Management, 2019</div>
+                    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.12978" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">On the Minimum Chordal Completion Polytope</div>
+                    <div class="pub-authors">D. Bergman, C. Cardonha, A. A. Cire, A. Raghunathan</div>
+                    <div class="pub-venue">Operations Research, 2019</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/opre.2018.1783" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Discrete Nonlinear Optimization by State-Space Decompositions</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire</div>
+                    <div class="pub-venue">Management Science, 2018</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2017.2849" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Hybrid Optimization Methods for Time-Dependent Sequencing Problems</div>
+                    <div class="pub-authors">J. Kinable, A. A. Cire, W.-J. van Hoeve</div>
+                    <div class="pub-venue">European Journal of Operational Research, 2017</div>
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0377221716309602" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Modeling with Metaconstraints and Semantic Typing of Variables</div>
+                    <div class="pub-authors">A. A. Cire, J. N. Hooker, Tallys Yunes</div>
+                    <div class="pub-venue">INFORMS Journal on Computing, 2016</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/ijoc.2015.0664" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Logic-based Benders Decomposition for Planning and Scheduling: A Computational Analysis</div>
+                    <div class="pub-authors">A. A. Cire, E. Çoban, J. N. Hooker</div>
+                    <div class="pub-venue">Knowledge Engineering Review, 2016</div>
+                    <a href="https://www.cambridge.org/core/journals/knowledge-engineering-review/article/abs/logicbased-benders-decomposition-for-planning-and-scheduling-a-computational-analysis/70EE77BFAE516C56F3363A90A3786D84" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Theoretical Insights and Algorithmic Tools for Decision Diagram-based Optimization</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire</div>
+                    <div class="pub-venue">Constraints, 2016</div>
+                    <a href="https://link.springer.com/article/10.1007/s10601-016-9239-9" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Discrete Optimization with Decision Diagrams</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, W.-J. van Hoeve, J. N. Hooker</div>
+                    <div class="pub-venue">INFORMS Journal on Computing, 2016</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/ijoc.2015.0648" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Lagrangian Bounds from Decision Diagrams</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, W.-J. van Hoeve</div>
+                    <div class="pub-venue">Constraints, 2015</div>
+                    <a href="https://link.springer.com/article/10.1007/s10601-015-9193-y" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">MDD Propagation for Sequence Constraints</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, W.-J. van Hoeve</div>
+                    <div class="pub-venue">Journal of Artificial Intelligence Research, 2014</div>
+                    <a href="https://www.jair.org/index.php/jair/article/view/10895" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">BDD-Based Heuristics for Binary Optimization</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, W.-J. van Hoeve, and T. Yunes</div>
+                    <div class="pub-venue">Journal of Heuristics, 2014</div>
+                    <a href="https://link.springer.com/article/10.1007/s10732-014-9238-1" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Optimization Bounds from Binary Decision Diagrams</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, W.-J. van Hoeve, J. N. Hooker</div>
+                    <div class="pub-venue">INFORMS Journal on Computing, 2014</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/ijoc.2013.0561" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Multivalued Decision Diagrams for Sequencing Problems</div>
+                    <div class="pub-authors">A. A. Cire, W.-J. van Hoeve</div>
+                    <div class="pub-venue">Operations Research, 2013</div>
+                    <a href="https://pubsonline.informs.org/doi/10.1287/opre.2013.1221" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Planning the Operation of a Large Real-World Oil Pipeline</div>
+                    <div class="pub-authors">T. Lopes, A. Moura, C. de Souza, A. A. Cire</div>
+                    <div class="pub-venue">Computers & Chemical Engineering, 2012</div>
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S009813541200186X" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">A Hybrid Model for a Multiproduct Pipeline Planning and Scheduling Problem</div>
+                    <div class="pub-authors">T. Lopes, A. A. Cire, C. de Souza, A. Moura</div>
+                    <div class="pub-venue">Constraints, 2010</div>
+                    <a href="https://link.springer.com/article/10.1007/s10601-009-9086-z" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+                </div>
+
+                <div class="pub-section">
+                    <h3 class="pub-category">Books</h3>
+                    
+                    <div class="pub-item">
+                    <div class="pub-title">Integration of Constraint Programming, Artificial Intelligence, and Operations Research: 20th International Conference (CPAIOR 2023)</div>
+                    <div class="pub-authors">A. A. Cire (editor)</div>
+                    <div class="pub-venue">Springer Nature, 2023</div>
+                    <a href="https://link.springer.com/book/10.1007/978-3-031-33271-5" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Decision Diagrams for Optimization</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, W.-J. van Hoeve, J. N. Hooker</div>
+                    <div class="pub-venue">Springer, 2016</div>
+                    <a href="https://link.springer.com/book/10.1007/978-3-319-42849-9" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+                </div>
+
+                <div class="pub-section">
+                    <h3 class="pub-category">Peer-Reviewed Conference Proceedings</h3>
+                    
+                    <div class="pub-item">
+                    <div class="pub-title">Improving the filtering of Branch-and-Bound MDD Solver</div>
+                    <div class="pub-authors">X. Guillard, V. Coppé, P. Schaus, A.A. Cire</div>
+                    <div class="pub-venue">CPAIOR, 2021</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-030-78230-6_15" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Minimizing Effort and Risk with Network Change Deployment Planning</div>
+                    <div class="pub-authors">C. E. de Andrade, A.A. Mahimkar, R.K. Sinha, W. Zhang, A.A. Cire, G. Rana, Z. Ge, S. Puthenra, J. Yates, R. Riding</div>
+                    <div class="pub-venue">IFIP Networking Conference, 2021</div>
+                    <a href="https://ieeexplore.ieee.org/document/9472779" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Combining Reinforcement Learning and Constraint Programming for Combinatorial Optimization</div>
+                    <div class="pub-authors">Q. Cappart, T. Moisan, L.-M. Rousseau, I. Prémont-Schwarz, A.A. Cire</div>
+                    <div class="pub-venue">AAAI, 2021</div>
+                    <a href="https://ojs.aaai.org/index.php/AAAI/article/view/16484" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Training Binarized Neural Networks using MIP and CP</div>
+                    <div class="pub-authors">R.T. Icarte, L. Illanes, M. Castro, A. A. Cire, S.A. McIlraith, J. C. Beck</div>
+                    <div class="pub-venue">CP, 2019</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-030-30048-7_24" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Constraint-based Sequential Pattern Mining with Decision Diagrams</div>
+                    <div class="pub-authors">A. Hosseininasab, W.-J. van Hoeve, A.A. Cire</div>
+                    <div class="pub-venue">AAAI, 2019</div>
+                    <a href="https://ojs.aaai.org/index.php/AAAI/article/view/3962" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Relaxed BDDs: An Admissible Heuristic for Delete-Free Planning Based on a Discrete Relaxation</div>
+                    <div class="pub-authors">M. Castro, C. Piacentini, A.A. Cire, J. C. Beck</div>
+                    <div class="pub-venue">ICAPS, 2019</div>
+                    <a href="https://ojs.aaai.org/index.php/ICAPS/article/view/3462" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">A Local Search Framework for Compiling Relaxed Decision Diagrams</div>
+                    <div class="pub-authors">M. Romer, A.A. Cire, L.-M. Rousseau</div>
+                    <div class="pub-venue">CPAIOR, 2018</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-93031-2_36" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Compiling Optimal Numeric Planning to Mixed-Integer Linear Programming</div>
+                    <div class="pub-authors">C. Piacentini, M.P. Castro, A. A. Cire, J. C. Beck</div>
+                    <div class="pub-venue">ICAPS, 2018</div>
+                    <a href="#" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Linear and Integer Programming-based Heuristics for Cost-optimal Numeric Planning</div>
+                    <div class="pub-authors">C. Piacentini, M.P. Castro, A. A. Cire, J. C. Beck</div>
+                    <div class="pub-venue">AAAI, 2018</div>
+                    <a href="https://ojs.aaai.org/index.php/ICAPS/article/view/13919" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">A First Look at Picking Dual Variables for Maximizing Reduced Cost Fixing</div>
+                    <div class="pub-authors">O.S. Bajgiran, A.A. Cire, L.-M. Rousseau</div>
+                    <div class="pub-venue">CPAIOR, 2017</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-59776-8_18" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">On Finding the Optimal BDD Relaxation</div>
+                    <div class="pub-authors">D. Bergman, A.A. Cire</div>
+                    <div class="pub-venue">CPAIOR, 2017</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-59776-8_4" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Mathematical Programming Models for Optimizing Partial Order Plan Flexibility</div>
+                    <div class="pub-authors">B. Say, A. A. Cire, J. C. Beck</div>
+                    <div class="pub-venue">ECAI, 2016</div>
+                    <a href="https://ebooks.iospress.nl/publication/44856" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Multiobjective Optimization by Decision Diagrams</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire</div>
+                    <div class="pub-venue">CP, 2016</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-44953-1_6" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Decomposition Based on Decision Diagrams</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire</div>
+                    <div class="pub-venue">CPAIOR, 2016</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-33954-2_4" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Improved Constraint Propagation via Lagrangian Decomposition</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, W.-J. van Hoeve</div>
+                    <div class="pub-venue">CP, 2015</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-23219-5_3" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Parallel Restarted Search</div>
+                    <div class="pub-authors">A. Cire, S. Kadioglu, M. Sellmann</div>
+                    <div class="pub-venue">AAAI, 2014</div>
+                    <a href="https://ojs.aaai.org/index.php/AAAI/article/view/8848" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Parallel Combinatorial Optimization with Decision Diagrams</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, A. Sabharwal, H. Samulowitz, V. A.Saraswat, W.-J. van Hoeve</div>
+                    <div class="pub-venue">CPAIOR, 2014</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-319-07046-9_25" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Mixed Integer Programming vs. Logic-based Benders Decomposition for Planning and Scheduling</div>
+                    <div class="pub-authors">A. Cire, E. Coban, J. N. Hooker</div>
+                    <div class="pub-venue">CPAIOR, 2013</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-642-38171-3_22" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">MDD Propagation for Disjunctive Scheduling</div>
+                    <div class="pub-authors">A. Cire and W.-J. van Hoeve</div>
+                    <div class="pub-venue">ICAPS, 2012</div>
+                    <a href="https://aaai.org/papers/00011-13521-mdd-propagation-for-disjunctive-scheduling/" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Variable Ordering for the Application of BDDs to the Maximum Independent Set Problem</div>
+                    <div class="pub-authors">D. Bergman, A. A. Cire, W.-J. van Hoeve, J. N. Hooker</div>
+                    <div class="pub-venue">CPAIOR, 2012</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-642-29828-8_3" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Flow-Based Combinatorial Chance Constraints</div>
+                    <div class="pub-authors">A. Cire, E. Coban, W.-J. van Hoeve</div>
+                    <div class="pub-venue">CPAIOR, 2012</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-642-29828-8_9" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Incremental Heuristic Search for Planning with Temporally Extended Goals and Uncontrollable Events</div>
+                    <div class="pub-authors">A. Botea, A. A. Cire</div>
+                    <div class="pub-venue">IJCAI, 2009</div>
+                    <a href="https://www.ijcai.org/Proceedings/09/Papers/275.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Learning in Planning with Temporally Extended Goals and Uncontrollable Events</div>
+                    <div class="pub-authors">A. Cire, A. Botea</div>
+                    <div class="pub-venue">ECAI, 2008</div>
+                    <a href="https://ebooks.iospress.nl/DOI/10.3233/978-1-58603-891-5-578" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Planning and Scheduling the Operation of a Very Large Oil Pipeline Network</div>
+                    <div class="pub-authors">T. Lopes, A. A. Cire, C. de Souza, A. Moura</div>
+                    <div class="pub-venue">CP, 2008</div>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-540-85958-1_3" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+
+                    <div class="pub-item">
+                    <div class="pub-title">Heuristics and Constraint Programming Hybridizations for a Real Pipeline Planning and Scheduling Problem</div>
+                    <div class="pub-authors">Moura, C. de Souza, A. A. Cire, T. Lopes</div>
+                    <div class="pub-venue">CSE, 2008</div>
+                    <a href="https://ieeexplore.ieee.org/document/4578265" target="_blank" rel="noopener noreferrer">[HTML]</a>
+                    </div>
+                </div>
+
+                </div>
+    
+        </main>
+
+    </div>
+
+    <footer class="footer">
+      © <span id="year"></span> Andre Augusto Cire
+    </footer>
+
+  </div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Smarter search filtering logic
+    document.getElementById("searchInput").addEventListener("keyup", function() {
+      let filter = this.value.toLowerCase();
+      let sections = document.querySelectorAll(".pub-section");
+
+      sections.forEach(function(section) {
+        let publications = section.querySelectorAll(".pub-item");
+        let hasVisiblePubs = false; // Keep track of whether this section has any matches
+
+        publications.forEach(function(pub) {
+          let text = pub.textContent.toLowerCase();
+          if (text.includes(filter)) {
+            pub.style.display = "";
+            hasVisiblePubs = true; // We found a match in this section!
+          } else {
+            pub.style.display = "none";
+          }
+        });
+
+        // Hide the entire section (including the h3 header) if nothing matched inside it
+        if (hasVisiblePubs) {
+          section.style.display = "";
+        } else {
+          section.style.display = "none";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

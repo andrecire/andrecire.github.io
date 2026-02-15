@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andre A. Cire - Teaching</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    /* Styling for the course list, keeping it consistent with the publications */
+    .course-category {
+      font-size: 24px;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+    .course-item {
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .course-title {
+      font-weight: 600;
+      font-size: 17px;
+    }
+    .course-venue {
+      font-style: italic;
+      color: #444;
+      margin-bottom: 4px;
+    }
+    .course-summary {
+      color: #333;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h1 class="site-title">Andre Augusto Cire</h1>
+      <p style="font-size: 16px; color: #555; margin-top: -5px;">
+        andre.cire@rotman.utoronto.ca • University of Toronto
+      </p>
+    </header>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a class="active" href="teaching.html">Teaching</a>
+      <a href="students.html">Students</a>
+      <a href="CV_CireAndre.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    </nav>
+
+    <div>
+
+      <main class="content">
+        
+        <p>
+          My teaching spans mathematical programming, data analytics, and operations management across undergraduate, professional master's, and doctoral levels. Below is a list of my primary courses.
+        </p>
+
+        <div class="course-section">
+          <h3 class="course-category">Graduate Courses</h3>
+          
+          <div class="course-item">
+            <div class="course-title">Optimizing Supply Chain and Logistics Analytics</div>
+            <div class="course-venue">Rotman School of Management • Master of Management Analytics (MMA)</div>
+            <div class="course-summary">
+              Provides optimization skills in supply chain operations. Topics include network design, aggregate planning, routing, and pricing. 
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-title">Business Data Analytics</div>
+            <div class="course-venue">University of Toronto Scarborough • Master of Accounting and Finance (MAccFin)</div>
+            <div class="course-summary">
+              Provides skills in data manipulation, data cleaning, and predictive models emphasizing applications in Accounting and Finance. 
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-title">Duality in Optimization (Advanced Methods in Linear and Non-linear Optimization)</div>
+            <div class="course-venue">Rotman School of Management • Ph.D. in Operations Management</div>
+            <div class="course-summary">
+              Investigates the use of duality in optimization and classical results in the field, including topics in polyhedral analysis, convex analysis, and decomposition methods. 
+            </div>
+          </div>
+        </div>
+
+        <div class="course-section">
+          <h3 class="course-category">Undergraduate Courses</h3>
+          
+          <div class="course-item">
+            <div class="course-title">Introductory/Advanced Business Data Analytics</div>
+            <div class="course-venue">University of Toronto Scarborough</div>
+            <div class="course-summary">
+              Provides skills in data manipulation, data cleaning, and predictive models (such as decision trees, random forests, and neural networks) for Management students, emphasizing managerial insights and principles of evidence-based decision making. 
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-title">Operations Management: A Mathematical Approach</div>
+            <div class="course-venue">University of Toronto Scarborough</div>
+            <div class="course-summary">
+              Provides skills in practical quantitative approaches to assess and improve upon decisions underlying the strategic goals of a firm. Topics include project management, forecasting, total quality, supply chain, inventory management, and basics of revenue management. 
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-title">Analysis for Decision Making</div>
+            <div class="course-venue">University of Toronto Scarborough</div>
+            <div class="course-summary">
+              Provides skills in prescriptive analytics models to enhance decision making and analysis of outcomes. Topics include decision analysis, mathematical programming, multi-criteria decision making, and queuing models using Excel. 
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-title">Mathematical Models for Consulting</div>
+            <div class="course-venue">Tepper School of Business, Carnegie Mellon University</div>
+            <div class="course-summary">
+              Provides skills in mathematical programming techniques for decision making, including linear and integer programming. 
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <footer class="footer">
+      © <span id="year"></span> Andre Augusto Cire
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
