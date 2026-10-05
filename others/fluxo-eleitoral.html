@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fluxo eleitoral · Reposição de filas</title>
+<style>
+:root{color-scheme:light;--ink:#193c43;--muted:#63777b;--teal:#087e86;--blue:#4769b2;--orange:#b17a26}*{box-sizing:border-box}body{margin:0;background:#edf2f1;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1140px;margin:40px auto;padding:0 24px}header{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:24px}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-weight:750}h1{font-size:clamp(24px,4vw,36px);letter-spacing:-1px;margin:8px 0}p{color:var(--muted);line-height:1.6;margin:0}.badge{border:1px solid #ccd9d7;border-radius:30px;padding:8px 14px;font-size:12px;white-space:nowrap}.card{background:#fff;border:1px solid #dbe4e2;border-radius:20px;box-shadow:0 16px 50px #193c4308;overflow:hidden}.scene{overflow-x:auto}svg{display:block;width:100%;min-width:700px;height:auto}svg text{font-family:inherit}.caption{border-top:1px solid #e5ecea;padding:20px 24px;display:flex;align-items:center;gap:16px;min-height:96px}.step{background:#e5f4f2;color:var(--teal);border-radius:12px;width:42px;height:42px;display:grid;place-items:center;font-size:18px;font-weight:700;flex-shrink:0}h2{font-size:17px;margin:0 0 4px}.caption p{font-size:13px}.controls{display:flex;align-items:center;gap:9px;padding:16px 24px;background:#f8faf9;border-top:1px solid #e5ecea;flex-wrap:wrap}button{cursor:pointer;border:1px solid #cad8d5;background:white;color:var(--ink);border-radius:9px;padding:10px 16px;font:600 13px inherit;font-family:inherit}button.primary{background:var(--teal);border-color:var(--teal);color:white}button:focus-visible{outline:3px solid #7bbac3;outline-offset:3px}button:disabled{opacity:.45;cursor:default}.track{height:5px;flex:1;min-width:80px;background:#dce6e3;border-radius:10px;overflow:hidden;margin-left:12px}.fill{height:100%;width:0;background:var(--teal)}.time{font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted);min-width:64px}.legend{display:flex;gap:22px;flex-wrap:wrap;margin:19px 0;font-size:12px;color:var(--muted)}.legend span{display:flex;gap:8px;align-items:center}.dot{width:10px;height:10px;border-radius:50%;background:var(--blue)}footer{font-size:12px;color:var(--muted);line-height:1.6;padding-bottom:24px}@media(max-width:600px){main{margin:24px auto;padding:0 12px}header{display:block}.badge{display:inline-block;margin-top:12px}.caption{padding:16px}.controls{padding:14px}.legend{gap:14px}}
+</style>
+</head>
+<body><main>
+<header><div><div class="eyebrow">Organização do fluxo · Simulação ilustrativa</div><h1>Uma sala. Três seções. Filas em movimento.</h1><p>A seção com pouca fila busca seus eleitores na entrada.</p></div><div class="badge">Ciclo de 15 segundos</div></header>
+<div class="card">
+<div class="scene"><svg viewBox="0 0 1060 570" role="img" aria-labelledby="sceneTitle sceneDesc">
+<title id="sceneTitle">Reposição da fila da Seção 102</title><desc id="sceneDesc">Uma sala com entrada única e três seções. A secretaria da Seção 102 busca cinco eleitores na fila externa. Um voluntário encaminha eleitores prioritários diretamente às seções.</desc>
+<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#dce6e3"/></pattern></defs>
+<rect width="1060" height="570" fill="#fcfdfc"/><rect width="1060" height="570" fill="url(#grid)"/>
+<text x="40" y="43" font-size="11" fill="#73868a" letter-spacing="2">ÁREA EXTERNA</text><text x="380" y="43" font-size="11" fill="#73868a" letter-spacing="2">SALA DE VOTAÇÃO</text>
+<path d="M350 245V70H1016V518H350V325" fill="none" stroke="#91aaa6" stroke-width="5" stroke-linecap="round"/>
+<path d="M351 245L393 211" stroke="#b6c8c4" stroke-width="2"/><path d="M350 325L393 359" stroke="#b6c8c4" stroke-width="2"/>
+<text x="321" y="351" font-size="11" fill="#63777b">Entrada única</text>
+<rect x="697" y="96" width="293" height="102" rx="14" fill="#eef2fa" stroke="#dbe2f2"/>
+<rect id="section102" x="697" y="244" width="293" height="102" rx="14" fill="#e5f4f2" stroke="#b7dcd7"/>
+<rect x="697" y="392" width="293" height="102" rx="14" fill="#f8f0e3" stroke="#ebdec8"/>
+<g font-size="18" font-weight="650"><text x="715" y="126" fill="#4769b2">Seção 101</text><text x="715" y="274" fill="#087e86">Seção 102</text><text x="715" y="422" fill="#b17a26">Seção 103</text></g>
+<g fill="#fff" stroke="#c7d4d1"><rect x="909" y="144" width="54" height="38" rx="7"/><rect x="909" y="292" width="54" height="38" rx="7"/><rect x="909" y="440" width="54" height="38" rx="7"/></g>
+<g font-size="9" fill="#748782" text-anchor="middle"><text x="936" y="167">URNA</text><text x="936" y="315">URNA</text><text x="936" y="463">URNA</text></g>
+<g stroke="#c6d5d1" stroke-width="2" stroke-dasharray="4 7"><path d="M480 163H893"/><path d="M480 311H893"/><path d="M480 459H893"/></g>
+<text x="40" y="239" font-size="14" font-weight="600">Fila geral</text><text x="40" y="258" font-size="11" fill="#63777b">Número = seção do eleitor</text>
+<rect x="32" y="267" width="287" height="65" rx="14" fill="#f0f4f3"/>
+<rect x="40" y="405" width="276" height="84" rx="14" fill="#fff7e8" stroke="#e5d3ab"/>
+<text x="55" y="428" font-size="13" font-weight="600" fill="#8d6a2c">Fila prioritária</text>
+<text x="415" y="105" font-size="11" fill="#63777b">Filas internas por seção</text>
+<g id="people"></g><g id="staff"></g>
+<text id="queueNote" x="715" y="287" font-size="10" fill="#087e86">Fila abastecida</text>
+<text x="55" y="536" font-size="11" fill="#7a8c8a">Esquema ilustrativo • distâncias e tempos simplificados</text>
+</svg></div>
+<div class="caption"><div class="step" id="step">1</div><div><h2 id="label"></h2><p id="detail"></p></div></div>
+<div class="controls"><button class="primary" id="play">▶ Play</button><button id="pause">Ⅱ Pause</button><button id="restart">↺ Restart</button><div class="track"><div class="fill" id="progress"></div></div><span class="time" id="time">0.0 / 15 s</span></div>
+</div>
+<div class="legend"><span><i class="dot"></i>Eleitor · 101</span><span><i class="dot" style="background:#087e86"></i>Eleitor · 102</span><span><i class="dot" style="background:#b17a26"></i>Eleitor · 103</span><span><i class="dot" style="background:#193c43;border-radius:2px"></i>Secretaria · S</span><span><i class="dot" style="background:#73868a;border-radius:2px"></i>Voluntário · V</span><span>★ Atendimento prioritário</span></div>
+<footer>A reposição começa com a fila baixa e traz até cinco eleitores disponíveis da Seção 102. O fluxo prioritário continua em paralelo. Demonstração da política proposta; não representa uma regra oficial eleitoral.</footer>
+</main>
+<script>
+(()=>{'use strict';
+const NS='http://www.w3.org/2000/svg',colors={101:'#4769b2',102:'#087e86',103:'#b17a26'};
+function make(section,priority=false,staff=false){const g=document.createElementNS(NS,'g');const ring=document.createElementNS(NS,'circle');ring.setAttribute('r','22');ring.setAttribute('fill','none');ring.setAttribute('stroke','#087e86');ring.setAttribute('stroke-width','2');ring.setAttribute('opacity','0');g.append(ring);const shape=document.createElementNS(NS,staff?'rect':'circle');if(staff){shape.setAttribute('x',-16);shape.setAttribute('y',-16);shape.setAttribute('width',32);shape.setAttribute('height',32);shape.setAttribute('rx',8)}else shape.setAttribute('r',17);shape.setAttribute('fill',staff?(section==='S'?'#193c43':'#73868a'):colors[section]);shape.setAttribute('stroke','white');shape.setAttribute('stroke-width','2');g.append(shape);const txt=document.createElementNS(NS,'text');txt.setAttribute('text-anchor','middle');txt.setAttribute('y','4');txt.setAttribute('fill','white');txt.setAttribute('font-size',staff?'13':'10');txt.setAttribute('font-weight','700');txt.textContent=section;g.append(txt);if(priority){const star=document.createElementNS(NS,'text');star.setAttribute('x','12');star.setAttribute('y','-12');star.setAttribute('fill','#8d6a2c');star.setAttribute('font-size','17');star.textContent='★';g.append(star)}document.getElementById(staff?'staff':'people').append(g);return {g,ring};}
+const outside=[102,101,102,103,102,102,102].map((s,i)=>({...make(s),s,x:292-i*39,y:300}));
+const inside=[];[101,102,103].forEach((s,j)=>{for(let i=0;i<4;i++)inside.push({...make(s),s,i,x:873-i*49,y:163+j*148});});
+const secretary=make('S',false,true),volunteer=make('V',false,true),priority=[{...make(101,true),s:101,x:275,y:459,start:1,end:5},{...make(103,true),s:103,x:221,y:459,start:6,end:10}];
+const steps=[{t:0,h:'As três seções atendem',d:'Os eleitores aguardam por seção; o voluntário cuida da fila prioritária.'},{t:2.5,h:'A fila da Seção 102 fica baixa',d:'Com apenas um eleitor na fila, começa a reposição antes de a seção ficar vazia.'},{t:4,h:'A secretaria vai até a entrada',d:'A secretaria da Seção 102 se desloca para identificar seus eleitores na fila geral.'},{t:6,h:'Até cinco eleitores são identificados',d:'O número da seção orienta a seleção. Neste exemplo, há cinco eleitores da Seção 102.'},{t:8,h:'O grupo segue para a Seção 102',d:'A secretaria acompanha os cinco eleitores; as outras seções continuam com suas filas.'},{t:12.5,h:'Fila reposta, prioridade em paralelo',d:'Os cinco eleitores chegam à Seção 102. Os prioritários vão diretamente às seções correspondentes.'}];
+const clamp=x=>Math.max(0,Math.min(1,x)),ease=x=>x*x*(3-2*x);
+function path(points,p){p=clamp(p);const lengths=points.slice(1).map((q,i)=>Math.hypot(q[0]-points[i][0],q[1]-points[i][1]));let distance=p*lengths.reduce((a,b)=>a+b,0);for(let i=0;i<lengths.length;i++){if(distance<=lengths[i]||i===lengths.length-1){const f=lengths[i]?distance/lengths[i]:0;return [points[i][0]+(points[i+1][0]-points[i][0])*f,points[i][1]+(points[i+1][1]-points[i][1])*f]}distance-=lengths[i]}}
+function pos(o,p,opacity=1){o.g.setAttribute('transform',`translate(${p[0]} ${p[1]})`);o.g.setAttribute('opacity',opacity)}
+function draw(t){inside.forEach(o=>{let opacity=1;if(o.s===102&&o.i<3)opacity=1-clamp((t-(.5+o.i*.65))/.45);pos(o,[o.x,o.y],opacity)});
+let sp=[715,355];if(t>=4&&t<6)sp=path([[715,355],[445,355],[332,285]],ease((t-4)/2));else if(t>=6&&t<8)sp=[332,285];else if(t>=8&&t<12.5)sp=path([[332,285],[428,285],[470,355],[715,355]],ease((t-8)/4.5));pos(secretary,sp);pos(volunteer,[332,402]);
+let selected=0;outside.forEach(o=>{let p=[o.x,o.y];if(o.s===102){const i=selected++;o.ring.setAttribute('opacity',t>=6&&t<8?1:0);if(t>=8){const start=8+i*.16,end=11.6+i*.16;p=path([[o.x,o.y],[335,285],[430,285],[470,311],[824-i*49,311]],ease((t-start)/(end-start)))}}pos(o,p)});
+priority.forEach((o,i)=>{let p=[o.x,o.y];if(t>=o.start){p=path([[o.x,o.y],[310,459],[325,360],[337,285],[445,285],[475,o.s===101?163:459],[570,o.s===101?163:459]],ease((t-o.start)/(o.end-o.start)))}pos(o,p);});
+const s=steps.filter(s=>t>=s.t).at(-1);document.getElementById('step').textContent=steps.indexOf(s)+1;document.getElementById('label').textContent=s.h;document.getElementById('detail').textContent=s.d;document.getElementById('queueNote').textContent=t<2.5?'Fila abastecida':t<12.5?'Fila baixa · reposição em curso':'Cinco eleitores recebidos';document.getElementById('progress').style.width=t/15*100+'%';document.getElementById('time').textContent=t.toFixed(1)+' / 15 s';}
+let elapsed=0,running=!matchMedia('(prefers-reduced-motion: reduce)').matches,last=null;const play=document.getElementById('play'),pause=document.getElementById('pause');function buttons(){play.disabled=running;pause.disabled=!running}play.onclick=()=>{running=true;last=null;buttons()};pause.onclick=()=>{running=false;buttons()};document.getElementById('restart').onclick=()=>{elapsed=0;last=null;draw(0);buttons()};function frame(now){if(running&&last!==null){elapsed+=(now-last)/1000;if(elapsed>=15)elapsed%=15}last=now;draw(elapsed);requestAnimationFrame(frame)}document.addEventListener('visibilitychange',()=>{last=null});buttons();draw(0);requestAnimationFrame(frame);
+})();
+</script></body></html>
